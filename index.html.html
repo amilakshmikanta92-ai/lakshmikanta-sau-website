@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lakshmikanta Sau | Postdoctoral Researcher</title>
+<meta name="description" content="Academic website of Lakshmikanta Sau, Postdoctoral Researcher at National Sun Yat-sen University, working on 6G, RIS, UAV and wireless communications.">
+<style>
+:root{
+  --bg:#050b16; --bg2:#091426; --panel:rgba(12,24,43,.70);
+  --panel2:rgba(18,35,60,.62); --text:#f4f8ff; --muted:#9db2ca;
+  --line:rgba(166,203,239,.14); --cyan:#57e2ff; --violet:#9a8cff;
+  --green:#72f0c0; --gold:#ffd47a; --max:1160px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  color:var(--text);line-height:1.7;background:
+  radial-gradient(circle at 10% 5%,rgba(87,226,255,.12),transparent 25%),
+  radial-gradient(circle at 92% 8%,rgba(154,140,255,.14),transparent 27%),
+  radial-gradient(circle at 50% 55%,rgba(48,111,183,.08),transparent 32%),var(--bg);
+  overflow-x:hidden;
+}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.28;background-image:radial-gradient(rgba(255,255,255,.14) .6px,transparent .6px);background-size:28px 28px;mask-image:linear-gradient(to bottom,black,transparent 75%);z-index:-1}
+a{color:inherit;text-decoration:none}.container{width:min(var(--max),92%);margin:auto}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(5,11,22,.62);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.navin{height:74px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:850;letter-spacing:.2px;font-size:1.05rem}.logo span{color:var(--cyan)}
+.navlinks{display:flex;gap:27px;font-size:.88rem;color:var(--muted);align-items:center}.navlinks a{transition:.25s}.navlinks a:hover{color:#fff}
+.nav-cta{padding:8px 13px;border:1px solid rgba(87,226,255,.28);border-radius:10px;color:#dffaff!important;background:rgba(87,226,255,.06)}
+.hero{min-height:100vh;display:flex;align-items:center;padding:125px 0 80px;position:relative;overflow:hidden}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:58px 58px;mask-image:linear-gradient(to bottom,black,transparent 82%)}
+.orb{position:absolute;border-radius:50%;filter:blur(55px);opacity:.16;animation:float 9s ease-in-out infinite}.orb.one{width:240px;height:240px;background:var(--cyan);top:18%;left:-90px}.orb.two{width:280px;height:280px;background:var(--violet);right:-100px;bottom:12%;animation-delay:-3s}
+@keyframes float{50%{transform:translate(20px,-25px) scale(1.06)}}
+.hero-content{position:relative;display:grid;grid-template-columns:1.08fr .92fr;gap:72px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#bcefff;font-size:.76rem;text-transform:uppercase;letter-spacing:2.5px;font-weight:800;margin-bottom:20px;padding:7px 11px;border:1px solid rgba(87,226,255,.2);border-radius:999px;background:rgba(87,226,255,.05)}
+.eyebrow:before{content:"";width:7px;height:7px;background:var(--green);border-radius:50%;box-shadow:0 0 13px var(--green)}
+h1{font-size:clamp(3.5rem,7.3vw,7rem);line-height:.9;letter-spacing:-5px;margin-bottom:28px}
+.gradient{background:linear-gradient(105deg,#fff 5%,#9defff 42%,#7e88ff 78%,#c4a8ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:1.1rem;color:var(--muted);max-width:680px}.lead strong{color:#eaf7ff;font-weight:650}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 17px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.035);transition:.25s;font-size:.92rem}.btn.primary{background:linear-gradient(135deg,#5ce5ff,#8d82ff);color:#03101c;border:0;font-weight:850;box-shadow:0 12px 35px rgba(87,226,255,.12)}.btn:hover{transform:translateY(-3px);border-color:rgba(87,226,255,.42)}
+.hero-card{position:relative;min-height:485px;border:1px solid rgba(163,204,239,.17);border-radius:30px;background:linear-gradient(145deg,rgba(19,39,67,.74),rgba(6,15,29,.78));box-shadow:0 35px 100px rgba(0,0,0,.42);overflow:hidden}
+.hero-card:after{content:"";position:absolute;inset:0;background:linear-gradient(125deg,transparent 0 45%,rgba(87,226,255,.06) 48%,transparent 52%);animation:scan 6s linear infinite}
+@keyframes scan{0%{transform:translateX(-120%)}100%{transform:translateX(120%)}}
+.network{position:absolute;inset:0}.network svg{position:absolute;inset:0;width:100%;height:100%}
+.node{position:absolute;width:15px;height:15px;border-radius:50%;background:var(--cyan);box-shadow:0 0 28px rgba(87,226,255,.9);z-index:2}.n1{left:16%;top:29%}.n2{left:48%;top:17%}.n3{right:16%;top:36%}.n4{left:39%;bottom:21%}.n5{right:25%;bottom:17%}
+.ris{position:absolute;left:39%;top:31%;width:90px;height:72px;transform:rotate(-13deg);z-index:2;display:grid;grid-template-columns:repeat(6,1fr);gap:5px;padding:8px;border:1px solid rgba(87,226,255,.4);background:rgba(87,226,255,.04);box-shadow:0 0 35px rgba(87,226,255,.08)}
+.ris i{border:1px solid rgba(87,226,255,.45);border-radius:2px}
+.uav{position:absolute;right:13%;top:18%;font-size:2.3rem;filter:drop-shadow(0 0 18px rgba(154,140,255,.8));z-index:3;animation:drone 4s ease-in-out infinite}
+@keyframes drone{50%{transform:translateY(-10px) translateX(-5px)}}
+.label{position:absolute;padding:7px 10px;border:1px solid var(--line);border-radius:9px;background:rgba(4,12,23,.72);backdrop-filter:blur(8px);font-size:.7rem;color:#c5d8eb;z-index:4}.l1{left:8%;bottom:12%}.l2{right:8%;bottom:11%}
+.metrics{position:absolute;left:7%;right:7%;bottom:7%;display:grid;grid-template-columns:repeat(3,1fr);gap:9px;z-index:4}.metric{padding:12px;border:1px solid var(--line);border-radius:13px;background:rgba(5,13,25,.64);backdrop-filter:blur(10px)}.metric b{display:block;font-size:1.1rem}.metric span{font-size:.68rem;color:var(--muted)}
+section{padding:110px 0;border-top:1px solid var(--line)}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:42px}.kicker{color:var(--cyan);text-transform:uppercase;letter-spacing:2.4px;font-size:.72rem;font-weight:850}.section-head h2{font-size:clamp(2.1rem,4vw,3.7rem);letter-spacing:-2px;line-height:1.05;margin-top:8px}.section-head p{max-width:430px;color:var(--muted);font-size:.95rem}
+.about{display:grid;grid-template-columns:1.05fr .95fr;gap:28px}.glass{padding:30px;border:1px solid var(--line);background:linear-gradient(145deg,rgba(18,36,62,.65),rgba(8,18,32,.55));border-radius:22px;box-shadow:0 18px 60px rgba(0,0,0,.14)}
+.about-copy{font-size:1.05rem;color:var(--muted)}.about-copy strong{color:#edf7ff}.signature{margin-top:25px;font-family:cursive;font-size:1.7rem;color:#c7efff}
+.research-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.research-card{padding:25px;border:1px solid var(--line);background:linear-gradient(145deg,rgba(18,36,62,.58),rgba(8,18,32,.45));border-radius:20px;min-height:245px;position:relative;overflow:hidden;transition:.3s}.research-card:hover{transform:translateY(-6px);border-color:rgba(87,226,255,.3);box-shadow:0 18px 50px rgba(0,0,0,.2)}.icon{width:43px;height:43px;display:grid;place-items:center;border-radius:13px;background:rgba(87,226,255,.08);border:1px solid rgba(87,226,255,.18);font-size:1.2rem;margin-bottom:23px}.research-card h3{font-size:1.05rem;margin-bottom:9px}.research-card p{color:var(--muted);font-size:.88rem}.research-card:after{content:"";position:absolute;width:110px;height:110px;right:-55px;bottom:-55px;border-radius:50%;background:rgba(87,226,255,.07)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}.tag{padding:6px 10px;border-radius:999px;background:rgba(87,226,255,.07);border:1px solid rgba(87,226,255,.16);font-size:.76rem;color:#ccefff}
+.pub-list{display:grid;gap:12px}.pub{display:grid;grid-template-columns:115px 1fr auto;gap:20px;align-items:start;padding:22px;border:1px solid var(--line);border-radius:18px;background:rgba(12,25,44,.52);transition:.25s}.pub:hover{border-color:rgba(87,226,255,.28);background:rgba(17,34,58,.7)}.pub-year{font-size:.8rem;color:var(--cyan);font-weight:800}.pub h3{font-size:1rem;line-height:1.45;margin-bottom:6px}.pub p{color:var(--muted);font-size:.84rem}.arrow{color:var(--muted);font-size:1.3rem}
+.journey{display:grid;grid-template-columns:1fr 1fr;gap:60px}.timeline{border-left:1px solid rgba(87,226,255,.25);padding-left:28px}.item{position:relative;margin-bottom:35px}.item:before{content:"";position:absolute;width:9px;height:9px;border-radius:50%;background:var(--cyan);left:-33px;top:9px;box-shadow:0 0 17px rgba(87,226,255,.75)}.date{font-size:.73rem;text-transform:uppercase;letter-spacing:1.4px;color:var(--cyan);font-weight:800}.item h3{margin:4px 0 3px;font-size:1.05rem}.item p{color:var(--muted);font-size:.9rem}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.stat{padding:22px;border:1px solid var(--line);border-radius:17px;background:rgba(14,28,48,.6)}.stat b{font-size:2rem;letter-spacing:-1px}.stat span{display:block;color:var(--muted);font-size:.8rem;margin-top:3px}
+.contact{display:grid;grid-template-columns:1fr .8fr;gap:18px}.contactbox{padding:32px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,rgba(18,36,62,.65),rgba(8,18,32,.52))}.contactbox h3{margin-bottom:8px}.contactbox p{color:var(--muted)}
+footer{padding:36px 0;color:var(--muted);border-top:1px solid var(--line);font-size:.82rem}.footerin{display:flex;justify-content:space-between;gap:20px}.footerlinks{display:flex;gap:18px}
+.reveal{opacity:0;transform:translateY(24px);transition:.75s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:1000px){.research-grid{grid-template-columns:repeat(2,1fr)}.hero-content{gap:40px}.journey{grid-template-columns:1fr}}
+@media(max-width:780px){.navlinks{display:none}.hero-content,.about,.contact{grid-template-columns:1fr}.hero{padding-top:115px}.hero-card{min-height:390px}h1{letter-spacing:-3px}.section-head{display:block}.section-head p{margin-top:15px}.research-grid{grid-template-columns:1fr}.pub{grid-template-columns:1fr}.pub-year{margin-bottom:-8px}.stats{grid-template-columns:1fr 1fr}.footerin{display:block}.footerlinks{margin-top:10px}}
+@media(max-width:480px){.stats{grid-template-columns:1fr}.metrics{grid-template-columns:1fr}.metric{display:none}.metric:first-child{display:block}.hero-card{min-height:350px}.ris{transform:scale(.8) rotate(-13deg)}}
+
+.name-mark{display:flex;align-items:baseline;gap:12px;margin:0 0 27px;line-height:1;position:relative;width:max-content}
+.name-small{font-size:.72rem;letter-spacing:3px;color:var(--cyan);font-weight:800;align-self:flex-start;margin-top:7px}
+.name-main,.name-accent{font-family:Georgia,"Times New Roman",serif;font-weight:700;letter-spacing:-2.5px}
+.name-main{font-size:clamp(1.8rem,3.2vw,3rem);color:#f7fbff}
+.name-accent{font-size:clamp(2rem,3.5vw,3.25rem);font-style:italic;background:linear-gradient(100deg,#57e2ff,#9a8cff);-webkit-background-clip:text;background-clip:text;color:transparent;position:relative}
+.name-accent:after{content:"";position:absolute;left:0;right:-4px;bottom:-8px;height:2px;background:linear-gradient(90deg,#57e2ff,#9a8cff,transparent);transform:skewX(-22deg);opacity:.8}
+.logo{display:flex;align-items:center;gap:5px;font-size:1rem}
+.logo-first{color:#eef7ff;font-weight:750}
+.logo-last{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:1.12rem;color:var(--cyan)}
+@media(max-width:480px){.name-mark{gap:8px}.name-small{font-size:.6rem;letter-spacing:2px}.name-main,.name-accent{letter-spacing:-1.5px}}
+</style>
+
+<style id="large-font-override">
+  html { font-size: 18px; }
+  body { font-size: 1.08rem; line-height: 1.7; }
+  nav, .nav, .navbar { font-size: 1.05rem; }
+  h1 { font-size: clamp(3.2rem, 7vw, 6.4rem); line-height: 1.02; }
+  h2 { font-size: clamp(2.1rem, 4vw, 3.2rem); line-height: 1.15; }
+  h3 { font-size: 1.35rem; }
+  p { font-size: 1.08rem; }
+  .hero p, .lead, .subtitle, .intro { font-size: 1.18rem; }
+  .btn, button { font-size: 1rem; }
+  .card, .publication, .timeline, .contact, .research-card { font-size: 1.05rem; }
+  .metric-value, .stat-value { font-size: 1.35rem; }
+  .metric-label, .stat-label { font-size: 0.95rem; }
+  @media (max-width: 700px) {
+    html { font-size: 17px; }
+    h1 { font-size: clamp(2.7rem, 13vw, 4.5rem); }
+    h2 { font-size: 2rem; }
+    body { font-size: 1rem; }
+  }
+</style>
+
+
+<style id="larger-name-override">
+  /* Make Lakshmikanta Sau much more prominent */
+  .hero h1,
+  .hero .name,
+  .hero .name-mark,
+  .hero .hero-name,
+  .hero .title-name {
+    font-size: clamp(4rem, 9vw, 8rem) !important;
+    line-height: 0.98 !important;
+    letter-spacing: -0.045em !important;
+  }
+
+  .hero h1 .surname,
+  .hero .name .surname,
+  .hero .name-mark .surname,
+  .hero .hero-name .surname,
+  .hero .title-name .surname {
+    font-size: 1.08em !important;
+  }
+
+  nav .brand,
+  nav .logo,
+  nav .site-title {
+    font-size: 1.35rem !important;
+  }
+
+  @media (max-width: 700px) {
+    .hero h1,
+    .hero .name,
+    .hero .name-mark,
+    .hero .hero-name,
+    .hero .title-name {
+      font-size: clamp(3.2rem, 16vw, 5.5rem) !important;
+    }
+  }
+</style>
+
+
+<style id="publication-columns">
+.publication-columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.4rem;margin-top:2rem;align-items:start}
+.publication-column{min-width:0;padding:1.35rem;border:1px solid rgba(255,255,255,.10);border-radius:22px;background:rgba(255,255,255,.035);backdrop-filter:blur(10px)}
+.publication-column-header{display:flex;align-items:flex-start;gap:.85rem;margin-bottom:1.15rem;padding-bottom:.9rem;border-bottom:1px solid rgba(255,255,255,.10)}
+.publication-column-header h3{margin:0;font-size:1.45rem}
+.publication-column-header p{margin:.2rem 0 0;opacity:.68;font-size:.88rem}
+.publication-icon{display:grid;place-items:center;width:2.35rem;height:2.35rem;border-radius:12px;background:rgba(0,220,255,.10);color:#5fe8ff;font-size:1.15rem;flex:0 0 auto}
+.publication-card{padding:1.05rem;margin-bottom:1rem;border-radius:16px;background:rgba(0,0,0,.16);border:1px solid rgba(255,255,255,.07)}
+.publication-card:last-child{margin-bottom:0}
+.publication-card h4{margin:.5rem 0 .55rem;font-size:1.03rem;line-height:1.42}
+.publication-card p{margin:.3rem 0 0;font-size:.9rem;line-height:1.55;opacity:.78}
+.publication-card .publication-meta{font-size:.82rem;opacity:.62}
+.publication-tag{display:inline-block;padding:.28rem .55rem;border-radius:999px;font-size:.67rem;font-weight:700;letter-spacing:.10em;background:rgba(0,220,255,.09);color:#63e9ff}
+.publication-card.ongoing{border-color:rgba(0,220,255,.16)}
+@media(max-width:1050px){.publication-columns{grid-template-columns:1fr}}
+</style>
+
+</head>
+<body>
+<nav><div class="container navin">
+  <a class="logo" href="#home"><span class="logo-first">Lakshmikanta</span> <span class="logo-last">Sau</span></a>
+  <div class="navlinks">
+    <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a>
+    <a href="#experience">Journey</a><a class="nav-cta" href="#contact">Let's connect</a>
+  </div>
+</div></nav>
+
+<header class="hero" id="home">
+<div class="grid"></div><div class="orb one"></div><div class="orb two"></div>
+<div class="container hero-content">
+  <div>
+    <div class="eyebrow">Postdoctoral Researcher · NSYSU · Taiwan</div>
+    <div class="name-mark"><span class="name-small">DR.</span><span class="name-main">Lakshmikanta</span><span class="name-accent">Sau</span></div><h1>Shaping the<br><span class="gradient">6G frontier.</span></h1>
+    <p class="lead">I am <strong>Lakshmikanta Sau</strong>, a postdoctoral researcher exploring intelligent wireless systems through <strong>RIS, UAV communications, mmWave, D2D networking, and 6G technologies.</strong></p>
+    <div class="buttons">
+      <a class="btn primary" href="#research">Explore my research <span>↗</span></a>
+      <a class="btn" href="https://scholar.google.com/citations?user=_metPDAAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar ↗</a>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div class="network">
+      <svg viewBox="0 0 600 500" preserveAspectRatio="none">
+        <defs><linearGradient id="line" x1="0" x2="1"><stop stop-color="#57e2ff" stop-opacity=".7"/><stop offset="1" stop-color="#9a8cff" stop-opacity=".4"/></linearGradient></defs>
+        <line x1="95" y1="150" x2="285" y2="95" stroke="url(#line)"/><line x1="285" y1="95" x2="500" y2="180" stroke="url(#line)"/>
+        <line x1="285" y1="95" x2="235" y2="390" stroke="url(#line)"/><line x1="235" y1="390" x2="420" y2="410" stroke="url(#line)"/>
+        <line x1="500" y1="180" x2="420" y2="410" stroke="rgba(87,226,255,.28)"/>
+        <path d="M80 155 Q290 5 520 185" fill="none" stroke="rgba(87,226,255,.16)" stroke-width="2"/>
+        <path d="M100 150 Q310 265 420 405" fill="none" stroke="rgba(154,140,255,.14)" stroke-width="2"/>
+      </svg>
+      <div class="uav">✦</div>
+      <div class="ris"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <i class="node n1"></i><i class="node n2"></i><i class="node n3"></i><i class="node n4"></i><i class="node n5"></i>
+      <div class="label l1">RIS-assisted link</div><div class="label l2">UAV / mmWave</div>
+      <div class="metrics">
+        <div class="metric"><b>6G</b><span>Next-gen networks</span></div>
+        <div class="metric"><b>RIS</b><span>Intelligent surfaces</span></div>
+        <div class="metric"><b>UAV</b><span>Aerial connectivity</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+
+
+<section class="publications-section">
+  <h2>Publications &amp; Works</h2>
+  <div class="publication-columns">
+    <div class="publication-column">
+      <div class="publication-column-header">
+        <span class="publication-icon">◈</span>
+        <div><h3>Journal</h3><p>Peer-reviewed journal publications</p></div>
+      </div>
+      <article class="publication-card">
+        <span class="publication-tag">JOURNAL</span>
+        <h4>Priority-Aware Grouping-Based Multihop Routing Scheme for RIS-Assisted Wireless Networks</h4>
+        <p class="publication-meta">IEEE Transactions on Network Science and Engineering · 2025</p>
+        <p>Lakshmikanta Sau, Priyadarshi Mukherjee, Sasthi C. Ghosh</p>
+      </article>
+      <article class="publication-card">
+        <span class="publication-tag">JOURNAL</span>
+        <h4>DRAMS: Double-RIS Assisted Multihop Routing Scheme for Device-to-Device Communication</h4>
+        <p class="publication-meta">Computer Communications · 2024</p>
+        <p>Lakshmikanta Sau, Priyadarshi Mukherjee, Sasthi C. Ghosh</p>
+      </article>
+      <article class="publication-card">
+        <span class="publication-tag">JOURNAL</span>
+        <h4>Double Reflections Assisted RIS Deployment and Energy-Efficient Group Selection in mmWaves D2D Communication</h4>
+        <p class="publication-meta">2025</p>
+        <p>Lakshmikanta Sau, Sasthi C. Ghosh</p>
+      </article>
+    </div>
+
+    <div class="publication-column">
+      <div class="publication-column-header">
+        <span class="publication-icon">◇</span>
+        <div><h3>Conference</h3><p>Conference papers &amp; proceedings</p></div>
+      </div>
+      <article class="publication-card">
+        <span class="publication-tag">CONFERENCE</span>
+        <h4>Geometry Based UAV Trajectory Planning for Mixed User Traffic in mmWave Communication</h4>
+        <p class="publication-meta">IEEE MeditCom · 2025</p>
+        <p>Sk Abid Hasan, Lakshmikanta Sau, Sasthi C. Ghosh</p>
+      </article>
+    </div>
+
+    <div class="publication-column">
+      <div class="publication-column-header">
+        <span class="publication-icon">✦</span>
+        <div><h3>Ongoing Works</h3><p>Current research &amp; manuscripts in progress</p></div>
+      </div>
+      <article class="publication-card ongoing">
+        <span class="publication-tag">ONGOING</span>
+        <h4>6G, RIS &amp; UAV-Assisted Intelligent Wireless Networks</h4>
+        <p class="publication-meta">Research in progress</p>
+        <p>Current work exploring intelligent, energy-efficient and resilient wireless communication systems for beyond-5G/6G networks.</p>
+      </article>
+      <article class="publication-card ongoing">
+        <span class="publication-tag">ONGOING</span>
+        <h4>RIS-Assisted Multihop Routing and Resource Optimization</h4>
+        <p class="publication-meta">Research in progress</p>
+        <p>Ongoing investigation of routing, grouping and resource-allocation strategies for RIS-enabled D2D and mmWave communication.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<section id="experience"><div class="container reveal">
+<div class="section-head"><div><div class="kicker">04 · Journey</div><h2>Academic path.</h2></div></div>
+<div class="journey"><div class="timeline">
+<div class="item"><div class="date">Present</div><h3>Postdoctoral Researcher</h3><p>National Sun Yat-sen University (NSYSU), Taiwan</p></div>
+<div class="item"><div class="date">Research Focus</div><h3>Wireless Communications & Networking</h3><p>6G · RIS · UAV · mmWave · D2D · Multihop Routing</p></div>
+<div class="item"><div class="date">Academic Profile</div><h3>Google Scholar Research Record</h3><p>Publications, citations, and continuing research contributions.</p></div>
+</div>
+<div class="glass"><div class="kicker">At a glance</div><div class="stats" style="margin-top:18px"><div class="stat"><b>6G</b><span>Future networks</span></div><div class="stat"><b>RIS</b><span>Smart propagation</span></div><div class="stat"><b>UAV</b><span>Aerial networking</span></div></div><p class="about-copy" style="margin-top:25px;font-size:.94rem">My goal is to develop practical and intelligent communication strategies that can make future wireless networks more adaptive and efficient.</p></div>
+</div></div></section>
+
+<section id="contact"><div class="container reveal">
+<div class="section-head"><div><div class="kicker">05 · Contact</div><h2>Let's build the<br>next connection.</h2></div></div>
+<div class="contact"><div class="contactbox"><h3>Research collaboration</h3><p>I am open to academic discussions and collaborations in 6G, RIS, UAV communications, mmWave, D2D networks, multihop routing, and related wireless systems.</p><div class="buttons"><a class="btn primary" href="https://scholar.google.com/citations?user=_metPDAAAAAJ&hl=en" target="_blank" rel="noopener">View my research ↗</a></div></div><div class="contactbox"><h3>Based at</h3><p style="margin-top:6px;color:#eef6ff">National Sun Yat-sen University</p><p>Taiwan</p><p style="margin-top:16px">Google Scholar profile available above.</p></div></div>
+</div></section>
+
+<footer><div class="container footerin"><div>© 2026 Lakshmikanta Sau · Postdoctoral Researcher · NSYSU</div><div class="footerlinks"><a href="#home">Back to top ↑</a><a href="https://scholar.google.com/citations?user=_metPDAAAAAJ&hl=en" target="_blank" rel="noopener">Scholar ↗</a></div></div></footer>
+<script>
+const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
